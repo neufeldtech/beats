@@ -169,6 +169,9 @@ https://github.com/elastic/beats/compare/v7.0.0-alpha2...master[Check the HEAD d
 - system/socket: Fix dataset using 100% CPU and becoming unresponsive in some scenarios. {pull}19033[19033] {pull}19764[19764]
 - system/socket: Fixed tracking of long-running connections. {pull}19033[19033]
 - Fix o365 module config when client_secret contains special characters. {issue}25058[25058]
+- Fix issue with m365_defender, when parsing incidents that has no alerts attached: {pull}25421[25421]
+- Mitigate deadlock is aws-s3 input when SQS visibility timeout is exceeded. {issue}25750[25750]
+- Fix httpjson cursor override with empty values by adding `ignore_empty_value` option. {pull}25802[25802]
 
 *Filebeat*
 
